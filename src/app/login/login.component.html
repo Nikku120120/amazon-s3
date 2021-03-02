@@ -1,0 +1,10 @@
+<div *ngIf = 'loggedIn'>
+    <h3>Logged in with {{ user.email }}</h3>
+    <h4>Welcome {{ user.name }}</h4>
+</div>
+<div *ngIf = '!loggedIn'>
+<button (click) = 'signInWithFB()'>sign in with fb</button>
+</div>
+<div *ngIf = 'loggedIn'>
+<button (click) ='signOut()'>signOut</button>
+</div>
